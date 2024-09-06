@@ -1,8 +1,8 @@
 package grace.demos
 
-import grails.plugin.scaffolding.annotation.ScaffoldController
+// import grails.plugin.scaffolding.annotation.ScaffoldController
 
-@ScaffoldController(value = SubclassRestfulController<Author>, domain = Author)
+// @ScaffoldController(value = SubclassRestfulController<Author>, domain = Author)
 class AuthorController {
 
 }

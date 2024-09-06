@@ -8,14 +8,15 @@ plugins {
     id "org.graceframework.grace-gsp"
 }
 
-ext['grace-scaffolding.version'] = '6.0.1-SNAPSHOT'
-ext['grace-plugin-scaffolding.version'] = '6.0.1-SNAPSHOT'
+// ext['grace-scaffolding.version'] = '6.0.1-SNAPSHOT'
+// ext['grace-plugin-scaffolding.version'] = '6.0.1-SNAPSHOT'
 
 group "grace.demos"
 
 repositories {
-    mavenLocal()
+    // mavenLocal()
     mavenCentral()
+    maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 configurations {
