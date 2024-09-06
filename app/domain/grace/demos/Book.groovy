@@ -2,7 +2,7 @@ package grace.demos
 
 import grails.rest.*
 
-@Resource(uri='/books', readOnly=true, superClass=SubclassRestfulController)
+@Resource(uri='/books', formats = ['html', 'json'], superClass=ScaffoldBookController)
 class Book {
 
     String title
