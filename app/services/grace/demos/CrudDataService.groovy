@@ -1,13 +1,14 @@
 package grace.demos
 
-import org.springframework.beans.factory.annotation.Autowired
+interface CrudDataService<T> {
 
-import org.grails.datastore.mapping.core.Datastore
+    T get(Serializable id)
 
-abstract class CrudDataService<T> {
+    List<T> list(Map args)
 
+    Long count()
 
-    T getId(Long id) {
-        return null
-    }
+    void delete(Serializable id)
+
+    T save(User user)
 }

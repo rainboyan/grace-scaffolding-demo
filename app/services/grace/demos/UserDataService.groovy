@@ -3,7 +3,7 @@ package grace.demos
 import grails.gorm.services.Service
 
 @Service(User)
-interface UserDataService {
+interface UserDataService extends CrudDataService<User> {
 
     User get(Serializable id)
 
